@@ -5,15 +5,8 @@
 
 Jquery extension functions that helps send form.
 
- - [Building](#building)
+ - [Release](#release)
     - [Coding](#coding)
-    - [Basic Coding](#basic-coding)
-    - [Web.Config](#web-config)
-    - [Database](#database)
-    - [Ajax](#ajax)
-    - [Javascript minify](#javascript-minify)
- - [WEC](#wec)
-    - [Wec Guide](https://github.com/Exmaru/SimpleWeb/blob/main/wec.md)
 
 ---
 
