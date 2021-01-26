@@ -7,44 +7,46 @@
 <title>Example</title>
 </head>
 <body>
-<form id="frm">
-    <div id="group1" data-array="g1">
-        <input type="hidden" name="seq" id="g1_seq_1" value="1" />
-        <input type="hidden" name="IsEnabled" id="g1_IsEnabled_1" value="0" />
-        <p><span>제목</span><input type="text" name="title" id="g1_title" value="sample_title_1" /></p>
-        <p><span>이름</span><input type="text" name="name" id="g1_name" value="sample_name_1" /></p>
-        <p>
-            <span>선호</span>
-            <input type="checkbox" name="favorite" id="g1_favorite_a" value="a" /><label for="g1_favorite_a">A</label>
-            <input type="checkbox" name="favorite" id="g1_favorite_b" value="b" /><label for="g1_favorite_b">B</label>
-        </p>
-        <p>
-            <span>성별</span>
-            <input type="checkbox" name="gender" id="g1_gender_M" value="Male" /><label for="g1_gender_M">A</label>
-            <input type="checkbox" name="gender" id="g1_gender_F" value="Female" /><label for="g1_gender_F">B</label>
-        </p>
+    <form id="frm">
+        <div>
+        <div id="group1" data-array="g1">
+            <input type="hidden" name="seq" id="g1_seq_1" value="1" />
+            <input type="hidden" name="IsEnabled" id="g1_IsEnabled_1" value="0" />
+            <p><span>제목</span><input type="text" name="title" id="g1_title" value="sample_title_1" /></p>
+            <p><span>이름</span><input type="text" name="name" id="g1_name" value="sample_name_1" /></p>
+            <p>
+                <span>선호</span>
+                <input type="checkbox" name="favorite" id="g1_favorite_a" value="a" /><label for="g1_favorite_a">A</label>
+                <input type="checkbox" name="favorite" id="g1_favorite_b" value="b" /><label for="g1_favorite_b">B</label>
+            </p>
+            <p>
+                <span>성별</span>
+                <input type="checkbox" name="gender" id="g1_gender_M" value="Male" /><label for="g1_gender_M">A</label>
+                <input type="checkbox" name="gender" id="g1_gender_F" value="Female" /><label for="g1_gender_F">B</label>
+            </p>
+        </div>
+        <div id="group2" data-array="g2">
+            <input type="hidden" name="seq" id="g1_seq_1" value="2" />
+            <input type="hidden" name="IsEnabled" id="g1_IsEnabled_1" value="1" />
+            <p><span>제목</span><input type="text" name="title" id="g2_title" value="sample_title_2" /></p>
+            <p><span>이름</span><input type="text" name="name" id="g2_name" value="sample_name_2" /></p>
+            <p>
+                <span>선호</span>
+                <input type="checkbox" name="favorite" id="g2_favorite_a" value="a" /><label for="g2_favorite_a">A</label>
+                <input type="checkbox" name="favorite" id="g2_favorite_b" value="b" /><label for="g2_favorite_b">B</label>
+            </p>
+            <p>
+                <span>성별</span>
+                <input type="checkbox" name="gender" id="g2_gender_M" value="Male" /><label for="g2_gender_M">A</label>
+                <input type="checkbox" name="gender" id="g2_gender_F" value="Female" /><label for="g2_gender_F">B</label>
+            </p>
+        </div>
+        <div>
+            <button type="button" onclick="toJsonTest()">ToJson Test</button>
+            <button type="button" onclick="toFormArrayTest()">ToFormArray Test</button>
+        </div>
     </div>
-    <div id="group2" data-array="g2">
-        <input type="hidden" name="seq" id="g1_seq_1" value="2" />
-        <input type="hidden" name="IsEnabled" id="g1_IsEnabled_1" value="1" />
-        <p><span>제목</span><input type="text" name="title" id="g2_title" value="sample_title_2" /></p>
-        <p><span>이름</span><input type="text" name="name" id="g2_name" value="sample_name_2" /></p>
-        <p>
-            <span>선호</span>
-            <input type="checkbox" name="favorite" id="g2_favorite_a" value="a" /><label for="g2_favorite_a">A</label>
-            <input type="checkbox" name="favorite" id="g2_favorite_b" value="b" /><label for="g2_favorite_b">B</label>
-        </p>
-        <p>
-            <span>성별</span>
-            <input type="checkbox" name="gender" id="g2_gender_M" value="Male" /><label for="g2_gender_M">A</label>
-            <input type="checkbox" name="gender" id="g2_gender_F" value="Female" /><label for="g2_gender_F">B</label>
-        </p>
-    </div>
-    <div>
-        <button type="button" onclick="toJsonTest()">ToJson Test</button>
-        <button type="button" onclick="toFormArrayTest()">ToFormArray Test</button>
-    </div>
-</form>
+    </form>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="formtojson.js"></script>
 <script src="formtojsonArray.js"></script>
