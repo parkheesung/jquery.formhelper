@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example</title>
+</head>
+<body>
+<h3>이 텍스트는 영향을 받으면 안됩니다.</h3>
+<js-loading template="loading_tag">just a moment...</js-loading>
+<template id="loading_tag">
+    <div>
+        <h3>Loading</h3>
+    </div>
+    <style>
+        h3 { color:red; }
+    </style>
+</template>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="formtojson.js"></script>
+<script src="formtojsonArray.js"></script>
+<script src="jsLoading.js"></script>
+</body>
+</html>

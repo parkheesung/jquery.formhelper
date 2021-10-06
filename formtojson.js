@@ -62,7 +62,7 @@ $.fn.toJson = function () {
     let Value = "";
     let name = "";
 
-    $(this).find("input[type=text], input[type=number], input[type=password], input[type=tel], input[type=email], input[type=date], input[type=hidden], select, textarea").each(function () {
+    $(this).find("input[type=range], input[type=search], input[type=text], input[type=number], input[type=password], input[type=tel], input[type=email], input[type=date], input[type=hidden], select, textarea").each(function () {
         uid = ($(this).attr("name") == null || $(this).attr("name") == "") ? $(this).attr("id") : $(this).attr("name");
         Value = $(this).val();
 
